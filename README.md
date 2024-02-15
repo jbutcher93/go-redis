@@ -1,6 +1,6 @@
 ## Description
 
-Trying out the redis helm chart with `github.com/redis/go-redis/v9` library. See more [here](https://redis.io/docs/connect/clients/go/).
+Trying out the redis helm chart with `github.com/redis/go-redis/v9` library. See more on the client library [here](https://redis.io/docs/connect/clients/go/) and the helm chart [here](https://github.com/bitnami/charts/tree/main/bitnami/redis).
 
 ## How to start in local k3d cluster
 
