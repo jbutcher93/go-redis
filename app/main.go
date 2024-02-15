@@ -22,8 +22,8 @@ type kv struct {
 
 func RedisWriteClient() *redis.Client {
 	client := redis.NewClient(&redis.Options{
-		// Addr:     "redis-master.default.svc.cluster.local:6379", // stage and prod environments
-		Addr:     "localhost:6380", // local environment
+		Addr: "redis-master.default.svc.cluster.local:6379", // stage and prod environments
+		// Addr:     "localhost:6380", // local environment
 		Password: os.Getenv("REDISPASSWORD"),
 		DB:       0,
 	})
@@ -33,8 +33,8 @@ func RedisWriteClient() *redis.Client {
 
 func RedisReadClient() *redis.Client {
 	client := redis.NewClient(&redis.Options{
-		// Addr:     "redis-replicas.default.svc.cluster.local:6379",	// stage and prod environments
-		Addr:     "localhost:6379", // local environment
+		Addr: "redis-replicas.default.svc.cluster.local:6379", // stage and prod environments
+		// Addr:     "localhost:6379", // local environment
 		Password: os.Getenv("REDISPASSWORD"),
 		DB:       0,
 	})
