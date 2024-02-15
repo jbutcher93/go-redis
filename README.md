@@ -2,11 +2,11 @@
 
 Trying out the redis helm chart with `github.com/redis/go-redis/v9` library. See more [here](https://redis.io/docs/connect/clients/go/).
 
-## How to start
+## How to start in local k3d cluster
+
+1. `chmod +x ./setup.sh`
 
 1. Run the `setup.sh` script
-
-1. In `go-redis/app/` run `go run main.go`
 
 ## Available functions
 
